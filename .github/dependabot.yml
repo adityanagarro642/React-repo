@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" 
+    directory: "/" 
+    schedule:
+      interval: "daily" 
+      time: "11:00"  
+      timezone: "Asia/Kolkata" 
+    open-pull-requests-limit: 10
+    reviewers:
+      - "adityanagarro642"
+    assignees:
+      - "adityanagarro642"
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
